@@ -13,3 +13,18 @@ D:\Visual Studio Projects\Probleme\obj\Debug\net6.0\refint\Probleme.dll
 D:\Visual Studio Projects\Probleme\obj\Debug\net6.0\Probleme.pdb
 D:\Visual Studio Projects\Probleme\obj\Debug\net6.0\Probleme.genruntimeconfig.cache
 D:\Visual Studio Projects\Probleme\obj\Debug\net6.0\ref\Probleme.dll
+D:\VSProjects\Probleme\bin\Debug\net6.0\Probleme.exe
+D:\VSProjects\Probleme\bin\Debug\net6.0\Probleme.deps.json
+D:\VSProjects\Probleme\bin\Debug\net6.0\Probleme.runtimeconfig.json
+D:\VSProjects\Probleme\bin\Debug\net6.0\Probleme.dll
+D:\VSProjects\Probleme\bin\Debug\net6.0\Probleme.pdb
+D:\VSProjects\Probleme\obj\Debug\net6.0\Probleme.csproj.AssemblyReference.cache
+D:\VSProjects\Probleme\obj\Debug\net6.0\Probleme.GeneratedMSBuildEditorConfig.editorconfig
+D:\VSProjects\Probleme\obj\Debug\net6.0\Probleme.AssemblyInfoInputs.cache
+D:\VSProjects\Probleme\obj\Debug\net6.0\Probleme.AssemblyInfo.cs
+D:\VSProjects\Probleme\obj\Debug\net6.0\Probleme.csproj.CoreCompileInputs.cache
+D:\VSProjects\Probleme\obj\Debug\net6.0\Probleme.dll
+D:\VSProjects\Probleme\obj\Debug\net6.0\refint\Probleme.dll
+D:\VSProjects\Probleme\obj\Debug\net6.0\Probleme.pdb
+D:\VSProjects\Probleme\obj\Debug\net6.0\Probleme.genruntimeconfig.cache
+D:\VSProjects\Probleme\obj\Debug\net6.0\ref\Probleme.dll

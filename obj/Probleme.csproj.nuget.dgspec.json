@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual Studio Projects\\Probleme\\Probleme.csproj": {}
+    "D:\\VSProjects\\Probleme\\Probleme.csproj": {}
   },
   "projects": {
-    "D:\\Visual Studio Projects\\Probleme\\Probleme.csproj": {
+    "D:\\VSProjects\\Probleme\\Probleme.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio Projects\\Probleme\\Probleme.csproj",
+        "projectUniqueName": "D:\\VSProjects\\Probleme\\Probleme.csproj",
         "projectName": "Probleme",
-        "projectPath": "D:\\Visual Studio Projects\\Probleme\\Probleme.csproj",
+        "projectPath": "D:\\VSProjects\\Probleme\\Probleme.csproj",
         "packagesPath": "C:\\Users\\hioar\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio Projects\\Probleme\\obj\\",
+        "outputPath": "D:\\VSProjects\\Probleme\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hioar\\AppData\\Roaming\\NuGet\\NuGet.Config"

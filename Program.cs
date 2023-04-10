@@ -1,10 +1,11 @@
-﻿using System;
+﻿using System.Collections;
+using System;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
-        BiArray.Arro();
+        Collections.Coll2();
     }
     public static void Prob1()
     {
@@ -672,4 +673,43 @@ class BiArray{
             }
             System.Console.WriteLine($"Suma = {sum}");
         }
+}
+class Collections{
+    public static void Coll1(){
+        List<string> names = new List<string>();
+        System.Console.WriteLine("Introduce names(to stop write \"end\"):" );
+        string nam;
+        for (int i = 0; i < 100; i++)
+        {
+            nam = Console.ReadLine();
+            if (nam == "end")
+            {
+                break;
+            }
+            names.Add(nam);
+        }
+        foreach (var item in names)
+        {
+            System.Console.WriteLine(item);
+        }
+    }
+    public static void Coll2(){
+        Dictionary<string,int> phonenum = new Dictionary<string, int>();
+        phonenum.Add("Johan", 123456789);
+        phonenum.Add("Jake", 987654321);
+        phonenum.Add("John",123456788);
+        foreach (var i in phonenum)
+        {
+            System.Console.WriteLine($"Name: {i.Key} | Phone Number: {i.Value}");
+        }
+    }
+    public static void Coll3(){
+        
+    }
+    public static void Coll4(){
+        
+    }
+    public static void Coll5(){
+        
+    }
 }
