@@ -5,7 +5,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Collections.Coll2();
+        Collections.Coll4();
     }
     public static void Prob1()
     {
@@ -675,7 +675,7 @@ class BiArray{
         }
 }
 class Collections{
-    public static void Coll1(){
+    public static void Coll1Ex(){
         List<string> names = new List<string>();
         System.Console.WriteLine("Introduce names(to stop write \"end\"):" );
         string nam;
@@ -693,7 +693,7 @@ class Collections{
             System.Console.WriteLine(item);
         }
     }
-    public static void Coll2(){
+    public static void Coll2Ex(){
         Dictionary<string,int> phonenum = new Dictionary<string, int>();
         phonenum.Add("Johan", 123456789);
         phonenum.Add("Jake", 987654321);
@@ -703,13 +703,124 @@ class Collections{
             System.Console.WriteLine($"Name: {i.Key} | Phone Number: {i.Value}");
         }
     }
+    public static void Coll1a(){
+        List<string> CarList = new List<string>();
+        CarList.Add("Mercedes");
+        CarList.Add("BMW");
+        CarList.Add("Nissan");
+        CarList.Add("Toyota");
+        CarList.Add("Daewoo");
+        CarList.Add("Ford");
+        CarList.Add("Subaru");
+        CarList.RemoveAt(0);
+        CarList.RemoveAt(CarList.Count-1);
+        CarList[CarList.Count/2] = "Lexus";
+        foreach (var item in CarList)
+        {
+            System.Console.WriteLine(item);
+        }
+    }
+    public static void Coll1b(){
+        Dictionary<string , string> games = new Dictionary<string, string>();
+        games.Add("Moba","Dota");
+        games.Add("MilitarySimulator","Squad");
+        games.Add("FPS","CS:GO");
+        games.Add("Strategy","StarCraft2");
+        games.Add("RPG","WoW");
+        games.Remove("Moba");
+        games.Remove("RPG");
+        games["FPS"] = "CS2";
+        foreach (var item in games)
+        {
+            System.Console.WriteLine(item);
+        }
+    }
+    public static void Coll1c(){
+        Stack<int> list = new Stack<int>();
+        list.Push(47);
+        list.Push(28);
+        list.Push(029425);
+        list.Push(880661);
+        list.Push(34790);
+        list.Push(17480);
+        list.Push(26800424);
+        list.Pop();
+        // d) neterminat
+        foreach (var item in list)
+        {
+            System.Console.WriteLine(item);
+        }
+    }
+    public static void Coll1d(){
+        Queue<string> list = new Queue<string>();
+        list.Enqueue("first");
+        list.Enqueue("second");
+        list.Enqueue("third");
+        list.Enqueue("fourth");
+        list.Enqueue("fifth");
+        list.Dequeue();
+        // d) neterminat
+        foreach (var item in list)
+        {
+            System.Console.WriteLine(item);
+        }
+    }
+    public static void Coll2(){
+        List<int> evenlist = new List<int>();
+        for (int i = 0; i < 10; i++)
+        {
+            int num = Convert.ToInt32(Console.ReadLine());
+            evenlist.Add(num);
+        }
+        foreach (var item in evenlist)
+        {
+            if (item % 2 == 0)
+            {
+                System.Console.Write($"{item} ");
+            }
+        }
+    }
     public static void Coll3(){
-        
+        List<int> evenlist = new List<int>();
+        for (int i = 0; i < 10; i++)
+        {
+            int num = Convert.ToInt32(Console.ReadLine());
+            if (num % 2 == 0)
+            {
+                evenlist.Add(num);
+            }
+        }
+        foreach (var item in evenlist)
+        {
+            System.Console.Write($"{item} ");
+        }
     }
     public static void Coll4(){
-        
-    }
-    public static void Coll5(){
-        
+        List<int> list = new List<int>();
+        List<int> uniqlist = new List<int>();
+        int count = 0;
+        for (int i = 0; i < 10; i++)
+        {
+            int num = Convert.ToInt32(Console.ReadLine());
+            list.Add(num);
+        }
+        for (int j = 0; j < list.Count-1; j++)
+        {
+            for (int k = 1; k < list.Count-2; k++)
+            {
+                if (j == k)
+                {
+                    count++;
+                }
+            }
+            if (count == 0)
+            {
+                uniqlist.Add(j);
+            }
+        }
+        foreach (var item in uniqlist)
+        {
+            System.Console.Write($"{item} ");
+        }
     }
 }
