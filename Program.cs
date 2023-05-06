@@ -5,7 +5,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Collections.Coll4();
+        Collections.Coll5();
     }
     public static void Prob1()
     {
@@ -799,28 +799,87 @@ class Collections{
         List<int> list = new List<int>();
         List<int> uniqlist = new List<int>();
         int count = 0;
-        for (int i = 0; i < 10; i++)
+        System.Console.WriteLine("Write numbers untill 0");
+        // 2 5 7 4 4 6 7 9 1 2
+        // | 5 7 4 4 6 7 9 1 2
+        for (int i = 0; i < 100; i++)
         {
             int num = Convert.ToInt32(Console.ReadLine());
             list.Add(num);
+            if (num == 0)
+            {
+                break;
+            }
         }
         for (int j = 0; j < list.Count-1; j++)
         {
-            for (int k = 1; k < list.Count-2; k++)
+            for (int k = 0; k < list.Count; k++)
             {
-                if (j == k)
+                if (list[j] == list[k])
                 {
                     count++;
                 }
             }
-            if (count == 0)
+            if (count == 1)
             {
-                uniqlist.Add(j);
+                uniqlist.Add(list[j]);
+            }
+            count = 0;
+        }
+        foreach (var item in uniqlist)
+        {
+            System.Console.Write($"{item} ");
+        }
+    }
+    public static void Coll5(){
+        // neterminata
+        List<int> list = new List<int>();
+        List<int> uniqlist = new List<int>();
+        System.Console.WriteLine("Write numbers untill 0");
+        // 2 5 7 4 4 6 7 9 1 2
+        //   2 5 7 4 4 6 7 9 1 2
+        for (int i = 0; i < 100; i++)
+        {
+            int num = Convert.ToInt32(Console.ReadLine());
+            if (num == 0)
+            {
+                break;
+            }
+            list.Add(num);
+        }
+        for (int j = 1; j < list.Count-2; j++)
+        {
+            if (list[j] >= list[j-1])
+            {
+                uniqlist.Add(list[j-1]);
+
             }
         }
         foreach (var item in uniqlist)
         {
             System.Console.Write($"{item} ");
         }
+    }
+    public static void Coll6(){
+        List<int> list = new List<int>();
+        int max = int.MaxValue;
+        System.Console.WriteLine("Write numbers till 0");
+        for (int i = 0; i < 100; i++)
+        {
+            int num = Convert.ToInt32(Console.ReadLine());
+            if (num == 0)
+            {
+                break;
+            }
+            list.Add(num);
+        }
+        for (int j = list.Count - 1; j >= 0 ; j--)
+        {
+            if (list[j] >= max)
+            {
+                max = list[j];
+            }
+        }
+        
     }
 }
